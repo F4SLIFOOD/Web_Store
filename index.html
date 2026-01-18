@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>F4SLIFOOD - Bakery & Cakes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="F4SLIFOOD – premium artisan breads, cakes, and pastries baked fresh daily for your family and events.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"><img src="logo.png" alt="Logo AD"></span>
+        <span class="logo-text">F4SLIFOOD</span>
+      </a>
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="checkout.html" class="nav-cta">Checkout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Roti Fresh Setiap Pagi, Dibuat dengan Sepenuh Hati</h1>
+          <p>F4SLIFOOD adalah UMKM roti rumahan yang mengutamakan bahan berkualitas, proses higienis, dan rasa yang konsisten.</p>
+          <p>Setiap roti dibuat tanpa pengawet, dipanggang setiap hari, dan siap menemani momen spesial Anda.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn primary-btn">Browse Menu</a>
+            <a href="#about" class="btn ghost-btn">Tentang F4SLIFOOD</a>
+          </div>
+          <div class="hero-meta">
+            <span>Mon–Fri · 05.00 – 07.00 AM</span>
+            <span>Bogor, Jawa Barat</span>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- Placeholder: royalty-free bakery hero image -->
+          <div class="hero-image-frame">
+            <img src="brw.jpg" alt="Fresh artisan breads and pastries on wooden table">
+          </div>
+          <div class="hero-badge">
+            <span class="badge-title">Best Seller</span>
+            <span class="badge-title">"Brownies Custom Topping"</span>
+            <span class="badge-subtitle">Brownies lembut dengan berbagai topping favorit, manisnya pas dan bikin nagih.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product catalog -->
+    <section id="products" class="section products">
+      <div class="container">
+        <header class="section-header">
+          <h2>Daftar Roti dan Kue</h2>
+          <p>Pilihan favorit untuk acara kumpul keluarga, perayaan, dan kenikmatan sehari-hari.</p>
+        </header>
+
+        <!-- Hidden template for JS & cross-page data -->
+        <script>
+          window.BAKERY_PRODUCTS = [
+            { id: "DoubleCizz", name: "Double Cizz", price: 7000, image: "dbc.jpg" },
+            { id: "DoubleChocolate", name: "Double Chocolate", price: 6000, image: "dbco.jpg" },
+            { id: "PizzaMini", name: "Pizza Mini", price: 8000, image: "pzm.jpg" },
+            { id: "CinnamonKismis", name: "Cinnamon Kismis", price: 6000, image: "cnmk.jpg" },
+            { id: "ChocAlmond", name: "Chocolate Almond", price: 8000, image: "comon.jpg" },
+            { id: "RotiSosis", name: "Roti Sosis", price: 7000, image: "roso.jpg" },
+            { id: "CoklatPisangKeju", name: "Coklat Pisang Keju", price: 6000, image: "cpkj.jpg" },
+            { id: "CoffeeBun", name: "Coffee Bun", price: 8000, image: "rkop.jpg" },
+            { id: "Risoless", name: "Risoles (10 pcs)", price: 35000, image: "risoles.jpg" },
+            { id: "LapisPepe", name: "Lapis Pepe", price: 55000, image: "lappe.jpg" },
+            { id: "BoluKukus", name: "Bolu Kukus (10 pcs)", price: 60000, image: "bokuk.jpg" },
+            { id: "Browniess", name: "Brownies Custom Topping", price: 120000, image: "brw.jpg" }
+            // { id: "SOURDOUGH_LOAF", name: "Sourdough Country Loaf", price: 45000, image: "https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg" },
+            // { id: "CROISSANT_BOX", name: "Butter Croissant Box (6 pcs)", price: 75000, image: "https://images.pexels.com/photos/2135/food-bread-toast-sandwich.jpg" },
+            // { id: "CHOCOLATE_CAKE", name: "Dark Chocolate Ganache Cake", price: 185000, image: "https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg" },
+            // { id: "CINNAMON_ROLLS", name: "Cinnamon Rolls Tray (9 pcs)", price: 99000, image: "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg" },
+            // { id: "CHEESE_TART", name: "Baked Cheese Tart Box (4 pcs)", price: 88000, image: "https://images.pexels.com/photos/1026124/pexels-photo-1026124.jpeg" },
+            // { id: "COOKIES_JAR", name: "Sea Salt Choc Chip Cookies Jar", price: 65000, image: "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg" },
+            // { id: "COOKIES_JAR", name: "Sea Salt Choc Chip Cookies Jar", price: 65000, image: "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg" }
+          ];
+        </script>
+
+        <div class="product-grid" id="product-grid">
+          <!-- Cards rendered by JS from window.BAKERY_PRODUCTS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2>Tentang F4SLIFOOD</h2>
+          <p>Berawal dari dapur kecil dan mimpi besar, F4SLIFOOD hadir untuk menghadirkan roti dengan cita rasa rumahan yang hangat dan jujur. Kami percaya bahwa roti yang baik bukan hanya soal rasa, tetapi juga tentang proses, ketelitian, dan ketulusan di balik setiap adonan yang dibuat.</p>
+          <p>Setiap roti kami diproduksi dengan perhatian penuh, menggunakan bahan pilihan yang aman dan berkualitas. Proses pembuatan dilakukan secara higienis dan terkontrol, agar setiap gigitan memberikan rasa nyaman, lezat, dan konsisten. Kami tidak hanya memanggang roti, tetapi juga merawat kualitas dari awal hingga roti sampai ke tangan pelanggan.</p>
+          <p>Dengan resep yang terus kami kembangkan dan semangat untuk selalu belajar, kami berkomitmen menyajikan produk yang dapat dinikmati oleh seluruh keluarga. F4SLIFOOD hadir sebagai teman setia di setiap momen—mulai dari sarapan sederhana, camilan sore, hingga hidangan spesial bersama orang terdekat.</p>
+          <p>Kami berkomitmen untuk menyajikan roti yang:</p>
+          <ul class="about-list">
+            <li>Lembut dan nyaman di mulut</li>
+            <li>Aroma yang menggugah selera</li>
+            <li>dan tentunya aman dan layak dikonsumsi setiap hari</li>
+          </ul>
+          <p>Bagi kami, kepuasan pelanggan adalah prioritas utama. Setiap masukan menjadi langkah kami untuk terus tumbuh, berkembang, dan menghadirkan kualitas yang lebih baik dari waktu ke waktu.</p>
+        </div>
+        <div class="about-image">
+          <img src="about.png" alt="Baker preparing artisan bread dough">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / footer band -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <div class="contact-block">
+          <h3>Alamat Toko</h3>
+          <p>Jl. Raflesia Blok CK.04, RT/RW 006/015, Bogor, Jawa Barat 16913</p>
+          <p>Mon–Fri · 05.00 – 07.00 AM</p>
+        </div>
+        <div class="contact-block">
+          <h3>Pemesanan Custom</h3>
+          <p>WhatsApp: <a class="wa-link" href="https://wa.me/6285773383414" target="_blank" rel="noopener">0857 7338 3414</a></p>
+          <p>Email: <a href="mailto:emiliarahayu143@gmail.com" class="email-link">emiliarahayu143@gmail.com</a></p>
+
+        </div>
+        <div class="contact-block">
+          <h3>Pemesanan</h3>
+          <p>Snack box, coffee break, and corporate hampers for your next meeting or event.</p>
+          <a href="#products" class="btn secondary-btn">Start Order</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2020 F4SLIFOOD · UMKM Food & Beverage</p>
+      <p class="footer-meta">Terima kasih telah mendukung F4SLIFOOD. Setiap pembelian Anda adalah bagian dari perjalanan kami untuk terus berkembang 💛</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
