@@ -771,8 +771,9 @@ textarea.error {
 }
 
 .map-link:hover {
-color: #1A73E8; /* warna BIRU Maps */
+  color: #1A73E8; /* warna BIRU Maps */
   text-decoration-thickness: 3px;
 }
+
 
 
