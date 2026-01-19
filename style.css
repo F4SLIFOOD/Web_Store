@@ -762,3 +762,15 @@ textarea.error {
   color: #D93025; /* warna merah Gmail */
   text-decoration-thickness: 3px;
 }
+
+.map-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #0a58ca;
+  transition: color 0.2s ease;
+}
+
+.map-link:hover {
+  color: #084298;
+  cursor: pointer;
+}
