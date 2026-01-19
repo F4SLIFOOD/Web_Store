@@ -764,13 +764,13 @@ textarea.error {
 }
 
 .map-link {
-  font-weight: bold;
   text-decoration: underline;
-  color: #0a58ca;
-  transition: color 0.2s ease;
+  color: #c5743d;
+  cursor: pointer;
+  transition: color 0.2s ease, text-decoration-thickness 0.2s ease;
 }
 
-.map-link:hover {
-  color: #084298;
-  cursor: pointer;
+color: #D93025; /* warna merah Gmail */
+  text-decoration-thickness: 3px;
 }
+
